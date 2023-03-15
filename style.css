@@ -1,0 +1,78 @@
+.grid-container{
+   
+    display: grid;
+    border: 1px solid none;
+    grid-template-columns: auto auto auto auto auto auto;
+    grid-template-rows: auto auto auto auto auto auto;
+    width: 100vw;
+    height: 100vw;
+}
+
+ .grid-item{
+    /* background-color: rgba(255, 255, 255, 0.8); */
+    /* border: 1px solid rgba(0, 0, 0, 0.8); */
+    padding: 50px;
+    font-size: 10px;
+    text-align: center;
+} 
+
+.grid-itemA{
+    /* background-color: rgba(255, 255, 255, 0.8); */
+    border: 4px solid red;
+    padding: 50px;
+    font-size: 10px;
+    text-align: center;
+    grid-area: rosso rosso;
+} 
+
+.grid-itemB{
+    /* background-color: rgba(255, 255, 255, 0.8); */
+    border: 4px solid blue;
+    padding: 50px;
+    font-size: 10px;
+    text-align: center;
+    grid-area: blu blu ;
+} 
+
+.grid-itemC{
+    /* background-color: rgba(255, 255, 255, 0.8); */
+    border: 4px solid violet;
+    padding: 50px;
+    font-size: 10px;
+    text-align: center;
+    grid-area: viola viola;
+} 
+
+.grid-itemD{
+    /* background-color: rgba(255, 255, 255, 0.8); */
+    border: 4px solid green;
+    padding: 50px;
+    font-size: 10px;
+    text-align: center;
+    grid-area: verde verde;
+} 
+@media only screen and (max-width: 992px) { 
+    .grid-container{
+        grid-template-columns: auto auto auto auto auto auto;
+        grid-template-rows: auto auto auto auto auto auto;
+        grid-template-areas: 
+            "rosso rosso rosso rosso"
+            "blue blue viola viola"
+            "blu blue viola viola"
+            "verde verde verde verde" ;
+            
+    }
+} 
+
+@media only screen and (max-width: 768px) { 
+    .grid-container{
+        width: 100%;
+        grid-template-columns: ;
+        grid-template-rows:;
+        grid-template-areas: 
+            "rosso rosso rosso rosso"
+            "blue blue viola viola"
+            "blu blue viola viola"
+            "verde verde verde verde" ;
+    }
+}
